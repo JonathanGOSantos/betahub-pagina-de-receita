@@ -1,0 +1,102 @@
+:root {
+  --bg-color: #573824;
+  --bg-surface: #f0e8c2;
+
+  --text-primary: #291b1a;
+  --text-secondary: #573a37;
+  --text-on-bg: #f0e8c2;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+body {
+  font-family: 'Alice', serif;
+}
+
+.app-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  gap: 1.75rem;
+
+  background-image: url('../images/app-bg.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.app-content {
+  background-color: var(--bg-surface);
+  max-width: 50rem;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+/* Css Containers */
+
+.c-recipe {
+  padding: 1.5rem 1.5rem 0;
+}
+
+.c-about {
+  p.u-paragrafh {
+    margin-bottom: 0.75rem;
+  }
+}
+.c-about__list {
+  list-style: none;
+  padding: 0;
+}
+
+.c-ingredients {
+  margin-block: 1.5rem;
+
+  h2.u-heading2 {
+    margin-bottom: 0.25rem;
+  }
+}
+
+.c-preparation {
+  h2.u-heading2 {
+    margin-bottom: 0.25rem;
+  }
+
+  p.u-paragrafh {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.c-footer {
+  color: var(--text-on-bg);
+}
+
+/* Css Utils */
+
+.u-heading1 {
+  font-size: 2.5rem;
+  line-height: 140%;
+  font-weight: regular;
+  color: var(--text-primary);
+}
+
+.u-heading2 {
+  font-size: 1.5rem;
+  line-height: 150%;
+  font-weight: regular;
+  color: var(--text-primary);
+}
+
+.u-paragrafh {
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: regular;
+  color: var(--text-secondary);
+}
